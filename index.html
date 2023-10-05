@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="player-container">
+      <div class="img-container">
+        <img src="img/musik-1.jpg" alt="album art" />
+      </div>
+      <h2 id="title">Electric Chil Machine</h2>
+      <h3 id="artist">Anubhav</h3>
+      <audio src="music/musik-1.mp3"></audio>
+      <!-- progress it includes progress bar and timers ongoing and duration of song  -->
+      <div class="progress-container" id="progress-container">
+        <div class="progress" id="progress"></div>
+        <div class="duration-wrapper">
+          <span id="current-time">0:00</span>
+          <span id="duration">2:06</span>
+        </div>
+      </div>
+      <!-- controls -->
+      <div class="player-controls">
+        <i class="fa-solid fa-backward" id="prev" title="Previous"></i>
+        <i class="fa-solid main-button fa-play" id="play" title="Play"></i>
+        <i class="fa-solid fa-forward" id="next" title="Next"></i>
+      </div>
+    </div>
+    <!-- Script -->
+    <script
+      src="https://kit.fontawesome.com/48b559450b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
